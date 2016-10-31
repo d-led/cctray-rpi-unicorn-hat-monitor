@@ -1,4 +1,3 @@
-#ci.gocd.yaml
 pipelines:
   gocd-rpi-unicorn-hat-monitor:
     group: defaultGroup
@@ -7,13 +6,17 @@ pipelines:
       main_repo:
         git: https://github.com/d-led/gocd-rpi-unicorn-hat-monitor.git
         branch: master
-    stages: # list of stages in order
-      - build:
+    stages:
+      - test:
           clean_workspace: false
           jobs:
             unit:
-              tasks: # ordered list of tasks to execute in job csharp
-               - exec: # indicates type of task
+              tasks:
+               - exec:
                    command: python
                    arguments:
                     - FakeHat.py
+               - exec:
+                   command: python
+                   arguments:
+                    - matrix.py
