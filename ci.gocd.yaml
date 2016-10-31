@@ -6,7 +6,7 @@ pipelines:
     materials:
       main_repo:
         git: https://github.com/d-led/gocd-rpi-unicorn-hat-monitor.git
-        branch: main
+        branch: master
     stages: # list of stages in order
       - build:
           clean_workspace: false
