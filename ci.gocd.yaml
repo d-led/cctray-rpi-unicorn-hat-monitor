@@ -16,4 +16,4 @@ pipelines:
                - exec: # indicates type of task
                    command: python
                    arguments:
-                    - '-v'
+                    - FakeHat.py
