@@ -1,0 +1,19 @@
+#ci.gocd.yaml
+pipelines:
+  gocd-rpi-unicorn-hat-monitor:
+    group: main
+    locking: off
+    materials:
+      main_repo:
+        git: https://github.com/d-led/gocd-rpi-unicorn-hat-monitor.git
+        branch: main
+    stages: # list of stages in order
+      - build:
+          clean_workspace: false
+          jobs:
+            unit:
+              tasks: # ordered list of tasks to execute in job csharp
+               - exec: # indicates type of task
+                   command: python
+                   arguments:
+                    - '-v'
