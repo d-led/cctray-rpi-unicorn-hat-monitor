@@ -8,7 +8,7 @@ class FakeHat:
     AREA = 8 * 8
     pixels = {}
 
-    def brightness(_):
+    def brightness(self,_):
         pass
 
     def clear():
