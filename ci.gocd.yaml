@@ -1,7 +1,7 @@
 #ci.gocd.yaml
 pipelines:
   gocd-rpi-unicorn-hat-monitor:
-    group: main
+    group: defaultGroup
     locking: off
     materials:
       main_repo:
