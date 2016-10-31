@@ -2,15 +2,22 @@
 
 show GoCD status on a Raspberry Pi + a Unicorn HAT
 
+## Prerequisites
+
+- Raspberry Pi, i.e. [3](https://www.raspberrypi.org/products/raspberry-pi-3-model-b/)
+- [Raspbian](https://www.raspberrypi.org/downloads/raspbian/)
+- [Unicorn HAT](https://shop.pimoroni.de/products/unicorn-hat)
+- `pip install unicornhat`
+- this project
+
 ## Usage
 
 ```
-python poll.py <cctray.xml_url> <poll_wait_s>
+sudo python poll.py <cctray.xml_url> <poll_wait_s>
 ```
 
-## Prerequisites
-
-- `pip install unicornhat`
+- if the number of status entries exceeds the number of LEDs on the LED matrix (64, here), only the top level entries will be used.
+- after the number of top level exceeds the number of LEDs, the input will be trimmed
 
 ## GoCD by example
 

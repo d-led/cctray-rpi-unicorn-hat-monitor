@@ -6,7 +6,7 @@ from cctray_status import CCTray
 import sys
 import time
 
-# USAGE: python poll.py <cctray.xml_url> <poll_wait_s>
+# USAGE: sudo python poll.py <cctray.xml_url> <poll_wait_s>
 
 url = 'http://localhost:8153/go/cctray.xml'
 poll_wait_s = 1
