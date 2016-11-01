@@ -9,7 +9,7 @@ import time
 # USAGE: sudo python poll.py <cctray.xml_url> <poll_wait_s>
 
 url = 'http://localhost:8153/go/cctray.xml'
-poll_wait_s = 1
+poll_wait_s = 5
 
 if len(sys.argv) == 1:
     from FakeHat import FakeHat
