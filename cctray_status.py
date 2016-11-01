@@ -30,7 +30,7 @@ class CCTray:
 
         total_count = len(status)
         if total_count > self.max_len:
-            status = [s for s in status if s[2] == 1]
+            status = [s for s in status if s[2] <= 1]
 
         input = [
             'BUILDING' if s[0] == 'building' else
