@@ -1,6 +1,6 @@
 # GoCD Raspberry Pi + Unicorn HAT Monitor
 
-show GoCD status on a Raspberry Pi + a Unicorn HAT
+show [GoCD](https://www.go.cd/) status on a Raspberry Pi + a Unicorn HAT
 
 [![Build Status](https://snap-ci.com/d-led/gocd-rpi-unicorn-hat-monitor/branch/master/build_image)](https://snap-ci.com/d-led/gocd-rpi-unicorn-hat-monitor/branch/master)
 
@@ -13,6 +13,7 @@ show GoCD status on a Raspberry Pi + a Unicorn HAT
 - [Unicorn HAT](https://shop.pimoroni.de/products/unicorn-hat)
 - `pip install unicornhat`
 - this project
+- A `cctray.xml` url ([Snap CI](https://snap-ci.com/) or other CC* tools are expected to work as well. Open an issue if not)
 
 ## Usage
 
@@ -25,7 +26,7 @@ sudo python poll.py <cctray.xml_url> <poll_wait_s>
 
 ![quick feedback](img/quick_feedback.jpg)
 
-## GoCD by example
+## GoCD pipeline as code
 
 The project can be built on GoCD using the new feature: [pipeline configuration from source control #1133](https://github.com/gocd/gocd/issues/1133). For this, use:
 
