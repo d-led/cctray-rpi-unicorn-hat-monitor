@@ -31,7 +31,7 @@ sudo python poll.py <cctray.xml_url> <poll_wait_s>
 Use a small HTTP server (based on [Flask](http://flask.pocoo.org)) listening to incoming arrays of status:
 
 ```python
-python server.py
+sudo python server.py
 ```
 
 i.e. with [httpie](https://httpie.org): `http post http://127.0.0.1:5500/update status:='["NONE","BUILDING","OK","ERROR","NONE","WHAT?"]' --auth ...`
