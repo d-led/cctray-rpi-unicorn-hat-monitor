@@ -15,6 +15,7 @@ show [GoCD](https://www.go.cd/) status on a Raspberry Pi + a Unicorn HAT
 - this project
 - A `cctray.xml` url ([Snap CI](https://snap-ci.com/) or other CC* tools are expected to work as well. Open an issue if not)
 
+
 ## Usage
 
 ```
@@ -34,9 +35,14 @@ Use a small HTTP server (based on [Flask](http://flask.pocoo.org)) listening to 
 sudo python server.py
 ```
 
-i.e. with [httpie](https://httpie.org): `http post http://127.0.0.1:5500/update status:='["NONE","BUILDING","OK","ERROR","NONE","WHAT?"]' --auth ...`
+push status i.e. with [httpie](https://httpie.org):
 
-or write your own polling script taking poll.py as an example.
+```
+http post http://127.0.0.1:5500/update status:='["NONE","BUILDING","OK","ERROR","NONE","WHAT?"]' --auth ...
+```
+
+or write your own polling script taking [poll.py](poll.py) as an example.
+
 
 ## GoCD pipeline as code
 
