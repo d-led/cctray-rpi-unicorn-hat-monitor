@@ -44,6 +44,9 @@ http post http://127.0.0.1:5500/update status:='["NONE","BUILDING","OK","ERROR",
 or write your own polling script taking [poll.py](poll.py) as an example.
 
 
+Valid status strings: `NONE, BUILDING, ERROR, OK, UNKNOWN`
+
+
 ## GoCD pipeline as code
 
 The project can be built on GoCD using the new feature: [pipeline configuration from source control #1133](https://github.com/gocd/gocd/issues/1133). For this, use:
