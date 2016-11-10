@@ -31,5 +31,9 @@ cctray = CCTray(url, hat.AREA)
 
 if __name__ == "__main__":
     while True:
-        sink.put(cctray.fetch())
+        try:
+            sink.put(cctray.fetch())
+        except Exception, e:
+            print e
+
         time.sleep(poll_wait_s)

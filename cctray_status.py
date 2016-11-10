@@ -1,4 +1,4 @@
-import urllib2
+import requests
 import xml.etree.ElementTree as etree
 
 class CCTray:
@@ -10,11 +10,12 @@ class CCTray:
         self.max_len = max_len
 
     def fetch(self):
-        response = urllib2.urlopen(self.url)
+        response = requests.get(self.url)
+        print(str(response))
 
-        html = response.read()
+        xml = response.text
 
-        tree = etree.fromstring(html)
+        tree = etree.fromstring(xml)
 
         status = []
 
