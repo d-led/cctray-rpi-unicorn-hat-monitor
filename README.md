@@ -22,6 +22,7 @@ show [GoCD](https://www.go.cd/) status on a Raspberry Pi + a Unicorn HAT
 sudo python poll.py <cctray.xml_url> <poll_wait_s>
 ```
 
+- the cctray.xml URL can include basic authentication
 - if the number of status entries exceeds the number of LEDs on the LED matrix (64, here), only the top level entries will be used.
 - after the number of top level exceeds the number of LEDs, the input will be trimmed
 
