@@ -11,7 +11,6 @@ class CCTray:
 
     def fetch(self):
         response = requests.get(self.url)
-        print(str(response))
 
         xml = response.text
 
