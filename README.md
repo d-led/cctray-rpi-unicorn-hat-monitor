@@ -1,4 +1,4 @@
-# GoCD Raspberry Pi + Unicorn HAT Monitor
+# GoCD/cctray.xml Raspberry Pi + Unicorn HAT Monitor
 
 show [GoCD](https://www.go.cd/) status on a Raspberry Pi + a Unicorn HAT
 
