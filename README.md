@@ -14,7 +14,7 @@ show [GoCD](https://www.go.cd/)/cctray.xml status on a Raspberry Pi + a Unicorn 
 - `pip install unicornhat`
 - this project
 - A `cctray.xml` url. [Snap CI](https://snap-ci.com/) or other [cctray.xml providing tools (see 
-nu wiki)](https://github.com/erikdoe/ccmenu/wiki/Supported-Servers) are expected to work as well.
+ccmenu wiki)](https://github.com/erikdoe/ccmenu/wiki/Supported-Servers) are expected to work as well.
 
 
 ## Usage
