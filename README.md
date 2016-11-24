@@ -1,6 +1,6 @@
 # GoCD/cctray.xml Raspberry Pi + Unicorn HAT Monitor
 
-show [GoCD](https://www.go.cd/) status on a Raspberry Pi + a Unicorn HAT
+show [GoCD](https://www.go.cd/)/cctray.xml status on a Raspberry Pi + a Unicorn HAT
 
 [![Build Status](https://snap-ci.com/d-led/gocd-rpi-unicorn-hat-monitor/branch/master/build_image)](https://snap-ci.com/d-led/gocd-rpi-unicorn-hat-monitor/branch/master)
 
@@ -13,7 +13,8 @@ show [GoCD](https://www.go.cd/) status on a Raspberry Pi + a Unicorn HAT
 - [Unicorn HAT](https://shop.pimoroni.de/products/unicorn-hat)
 - `pip install unicornhat`
 - this project
-- A `cctray.xml` url ([Snap CI](https://snap-ci.com/) or other CC* tools are expected to work as well. Open an issue if not)
+- A `cctray.xml` url. [Snap CI](https://snap-ci.com/) or other [cctray.xml providing tools (see 
+nu wiki)](https://github.com/erikdoe/ccmenu/wiki/Supported-Servers) are expected to work as well.
 
 
 ## Usage
