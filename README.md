@@ -2,8 +2,6 @@
 
 show [GoCD](https://www.go.cd/)/cctray.xml status on a Raspberry Pi + a Unicorn HAT
 
-[![Build Status](https://snap-ci.com/d-led/gocd-rpi-unicorn-hat-monitor/branch/master/build_image)](https://snap-ci.com/d-led/gocd-rpi-unicorn-hat-monitor/branch/master)
-
 ![LEDs](img/leds.jpg)
 
 ## Prerequisites
