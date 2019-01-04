@@ -35,7 +35,8 @@ class CCTray:
         input = [
             'BUILDING' if s[0] == 'building' else
             'OK' if s[1] == 'success' else
-            'ERROR' if s[1] == 'failure'
+            'ERROR' if s[1] == 'failure' else
+            'ERROR' if s[1] == 'error'
             else 'UNKNOWN'
             for s in status
         ]
