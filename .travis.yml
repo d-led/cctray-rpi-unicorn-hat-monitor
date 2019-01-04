@@ -1,6 +1,6 @@
 language: python
 python:
-  - "3.7"
+  - "3.6"
   - "2.7"
 script:
   - pytest FakeHat.py sink.py matrix.py
