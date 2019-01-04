@@ -21,6 +21,8 @@ class RealHatHD:
     def show(self):
         hat.show()
 
+    def off(self):
+        hat.off()
+
     def dump(self):
         pass
-

@@ -23,14 +23,18 @@ led = Matrix(hat)
 sink = Sink(led)
 
 if __name__ == "__main__":
-    while True:
-      status = []
-      for url in urls:   
-          try:
-              cctray = CCTray(url, hat.AREA)
-              status += cctray.fetch()
-          except Exception, e:
-              print e
-    
-      sink.put(status)
-      time.sleep(poll_wait_s)
+    try:
+        while True:
+        status = []
+        for url in urls:   
+            try:
+                cctray = CCTray(url, hat.AREA)
+                status += cctray.fetch()
+            except Exception, e:
+                print e
+        
+        sink.put(status)
+        time.sleep(poll_wait_s)
+
+    except KeyboardInterrupt:
+        hat.off()
