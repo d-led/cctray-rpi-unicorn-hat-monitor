@@ -1,6 +1,8 @@
 # GoCD/cctray.xml Raspberry Pi + Unicorn HAT Monitor
 
-show [GoCD](https://www.go.cd/)/cctray.xml status on a Raspberry Pi + a Unicorn HAT
+show [GoCD](https://www.go.cd/)/cctray.xml status on a Raspberry Pi + a Unicorn HAT (HD)
+
+[![Build Status](https://travis-ci.org/d-led/cctray-rpi-unicorn-hat-monitor.svg?branch=master)](https://travis-ci.org/d-led/cctray-rpi-unicorn-hat-monitor)
 
 ![LEDs](img/leds.jpg)
 
