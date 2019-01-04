@@ -25,16 +25,16 @@ sink = Sink(led)
 if __name__ == "__main__":
     try:
         while True:
-        status = []
-        for url in urls:   
-            try:
-                cctray = CCTray(url, hat.AREA)
-                status += cctray.fetch()
-            except Exception, e:
-                print e
-        
-        sink.put(status)
-        time.sleep(poll_wait_s)
+            status = []
+            for url in urls:   
+                try:
+                    cctray = CCTray(url, hat.AREA)
+                    status += cctray.fetch()
+                except Exception, e:
+                    print e
+            
+            sink.put(status)
+            time.sleep(poll_wait_s)
 
     except KeyboardInterrupt:
         hat.off()
