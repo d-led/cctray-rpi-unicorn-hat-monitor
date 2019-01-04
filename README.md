@@ -10,14 +10,14 @@ show [GoCD](https://www.go.cd/)/cctray.xml status on a Raspberry Pi + a Unicorn 
 
 - Raspberry Pi, i.e. [3](https://www.raspberrypi.org/products/raspberry-pi-3-model-b/)
 - [Raspbian](https://www.raspberrypi.org/downloads/raspbian/)
-- [Unicorn HAT](https://shop.pimoroni.de/products/unicorn-hat)
-- `pip install unicornhat`
-- this project
-- A `cctray.xml` url. [Snap CI](https://snap-ci.com/) or other [cctray.xml providing tools (see 
-ccmenu wiki)](https://github.com/erikdoe/ccmenu/wiki/Supported-Servers) are expected to work as well.
+- [Unicorn HAT](https://shop.pimoroni.de/products/unicorn-hat) or [Unicorn HAT HD](https://shop.pimoroni.com/products/unicorn-hat-hd)
+- follow HAT installation instructions at [https://github.com/pimoroni/unicorn-hat](https://github.com/pimoroni/unicorn-hat) or [https://github.com/pimoroni/unicorn-hat-hd](https://github.com/pimoroni/unicorn-hat-hd)
+- clone this project
+- A `cctray.xml` url. Any [cctray.xml providing tool (see 
+ccmenu wiki)](https://github.com/erikdoe/ccmenu/wiki/Supported-Servers) are expected to work as well. E.g. my [Travis-CI](https://docs.travis-ci.com/user/cc-menu/) status: [xml](https://api.travis-ci.org/repos/d-led.xml)
 
 
-## Usage
+## Unicorn HAT Usage
 
 ```
 sudo python poll.py <cctray.xml_url> <poll_wait_s>
@@ -29,7 +29,19 @@ sudo python poll.py <cctray.xml_url> <poll_wait_s>
 
 ![quick feedback](img/quick_feedback.jpg)
 
+## Unicorn HAT HD Usage
+
+```
+sudo python poll_hd.py <poll_wait_s> <cctray.xml_url_1> <cctray.xml_url_2> .. <cctray.xml_url_n>
+```
+
+- same visualization logic as with for the HAT
+
+![quick feedback](img/hd.jpg)
+
 ## If you don't use GoCD / can't access cctray.xml
+
+> currently, not for the HD HAT. Contribute if necessary
 
 Use a small HTTP server (based on [Flask](http://flask.pocoo.org)) listening to incoming arrays of status:
 
