@@ -36,5 +36,5 @@ if __name__ == "__main__":
             sink.put(status)
             time.sleep(poll_wait_s)
 
-    except:
+    except KeyboardInterrupt:
         hat.off()
