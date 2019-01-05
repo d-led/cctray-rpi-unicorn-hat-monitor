@@ -60,6 +60,13 @@ or write your own polling script taking [poll.py](poll.py) as an example.
 
 Valid status strings: `NONE, BUILDING, ERROR, OK, UNKNOWN`
 
+## Running as a systemd Service
+
+- customize [install_as_service.sh](install_as_service.sh)
+- `sudo ./install_as_service.sh`
+- reboot or `sudo systemctl start cctray_poller.service`
+- to uninstall: `sudo ./uninstall_service.sh`
+- current limitation: the LEDs won't be turned off on signal (service stop): #1
 
 ## GoCD pipeline as code
 
