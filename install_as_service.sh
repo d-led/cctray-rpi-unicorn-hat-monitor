@@ -34,5 +34,5 @@ WantedBy=multi-user.target
 EOF
 
 chmod 644 $target_file
-sudo systemctl daemon-reload
-sudo systemctl enable ${service_name}
+systemctl daemon-reload
+systemctl enable ${service_name}
