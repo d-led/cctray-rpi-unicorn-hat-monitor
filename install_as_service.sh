@@ -27,7 +27,7 @@ After=multi-user.target
 
 [Service]
 Type=idle
-ExecStart=/usr/local/bin/python ${origin}/poll_hd.py ${urls} > $origin/cctray.log 2>&1
+ExecStart=/usr/bin/python ${origin}/poll_hd.py ${urls} > $origin/cctray.log 2>&1
 
 [Install]
 WantedBy=multi-user.target
