@@ -10,7 +10,7 @@ class CCTray:
         self.max_len = max_len
 
     def fetch(self):
-        response = requests.get(self.url)
+        response = requests.get(self.url, , verify=False)
 
         xml = response.text
 
